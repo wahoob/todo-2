@@ -1,0 +1,21 @@
+@import url(./_fonts.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-inter font-normal;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-transparent rounded-full;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+  @apply bg-secondary-scroll-bar;
+}
